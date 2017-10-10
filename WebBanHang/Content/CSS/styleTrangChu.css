@@ -1,0 +1,115 @@
+﻿#open div{
+	display: inline-block;
+	
+}
+div#left {
+	width: 100%;
+	float:left;
+	background-color : yellowgreen;
+	height: 50px;
+}
+#left p {
+	font-size: 25px;
+	margin-top: 5px;
+	text-align: center;
+	font-weight: bolder;
+	color: white;
+}
+div#right {
+	background-color: aqua;
+	width: 18%;
+	height: 80px;
+}
+
+#menu {
+	margin: 10px;
+	padding-left:  0;
+	padding-right: 0;
+}
+
+ @-moz-document url-prefix() {
+    #menu > li {
+        display: inline-block;
+        margin: 20px 0 0 22px;
+        font-size: 15px;
+        padding-right: 10px;
+    }
+ }
+   
+#open {
+	width: 100%;
+	height: 50px;
+	
+}
+
+#main {
+	width: 100%;
+	height: 1000px;
+	background-color: #746263;
+	border-radius: 10px;
+    z-index: 0;
+}
+div#main {
+    display: inline-block;
+}
+#one {
+    width: 14%;
+    height: 1000px;
+    background-color: red;
+    float: left;
+}
+#two {
+    width: 66%;
+    height: 1000px;
+    background-color: blue;
+    float: left;
+    
+}
+
+#three {
+    width: 20%;
+    height: 1000px;
+    background-color: green;
+    float: left;
+}
+#note  {
+    text-align: justify;
+    padding-right: 0px;
+    margin-left: 25px;
+}
+div#line-1 {
+    width: 100%;
+    height: 331px;
+    background-color: black;
+}
+div#line-2 {
+    width: 100%;
+    height: 331px;
+    background-color: black;
+}
+div#line-3 {
+    width: 100%;
+    height: 331px;
+    background-color: black;
+}
+#sp1 {
+    height: 100%;
+    background-color: white;
+}
+#sp2 {
+    height: 100%;
+    background-color: yellow;
+}
+#sp3 {
+    height: 100%;
+    background-color: white;
+}
+#line-1 {
+    display: inline-block;
+}
+#line-2 {
+    display: inline-block;
+}
+#line-3 {
+    display: inline-block;
+}
