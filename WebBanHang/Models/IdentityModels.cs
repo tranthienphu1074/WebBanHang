@@ -29,5 +29,7 @@ namespace WebBanHang.Models
         {
             return new ApplicationDbContext();
         }
+
+        public System.Data.Entity.DbSet<WebBanHang.Models.DanhMuc> DanhMucs { get; set; }
     }
 }

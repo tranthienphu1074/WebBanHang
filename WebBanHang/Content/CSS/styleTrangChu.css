@@ -104,6 +104,21 @@ div#line-3 {
     height: 100%;
     background-color: white;
 }
+#sp1 img {
+    width : 100%;
+    height: 100%;
+    border: 1px;
+}
+#sp2 img {
+    width : 100%;
+    height: 100%;
+    
+}
+#sp3 img {
+    width : 100%;
+    height: 100%;
+    border: 1px;
+}
 #line-1 {
     display: inline-block;
 }

@@ -1,0 +1,50 @@
+﻿@model WebBanHang.Models.DanhMuc
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>DanhMuc</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.NguoiDangId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NguoiDangId)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.HoTen)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.HoTen)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NhanHieu)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NhanHieu)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NgayDangSP)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NgayDangSP)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.TenSanPham }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
