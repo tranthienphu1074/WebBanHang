@@ -128,3 +128,12 @@ div#line-3 {
 #line-3 {
     display: inline-block;
 }
+
+#navbar-menu > ul {
+    display: inline;
+}
+#navbar-menu li {
+    display: inline;
+    width: 20px;
+    padding-right: 50px;
+}

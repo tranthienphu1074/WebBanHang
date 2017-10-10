@@ -36,10 +36,24 @@ namespace WebBanHang.Controllers
         }
 
         // GET: DanhMucs/Create
+        private readonly ApplicationDbContext _dbContext;
+        public DanhMucsController()
+        {
+            _dbContext = new ApplicationDbContext();
+        }
         public ActionResult Create()
         {
-            return View();
+            
+            var view = new DanhMuc
+            {
+               
+            };
+            return View(view);
         }
+        //public ActionResult Create()
+       // {
+       //     return View();
+       // }
 
         // POST: DanhMucs/Create
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for 

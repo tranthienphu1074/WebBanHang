@@ -1,4 +1,6 @@
-﻿@{
+﻿@using WebBanHang.Models
+@model WebBanHang.Models.DanhMuc
+@{
     ViewBag.Title = "Giao diện trang chủ";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
@@ -21,7 +23,18 @@
     </div>
     <div id="main">
         <div id="one">
-
+            <div class="dropdown">
+                <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">
+                    Thương hiệu
+                    <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a href="#">ASUS</a></li>
+                    <li><a href="#">MAC</a></li>
+                    <li><a href="#">DELL</a></li>
+                    <li><a href="#">ACER</a></li>
+                </ul>
+            </div> 
         </div>
         <div id="two">
             <div id="line-1">
@@ -57,9 +70,25 @@
                     <img src="~/Content/Images/sp.png" title="Hình sp">
                 </div>
             </div>
+            <nav id="navbar-menu" class="navbar navbar-toggleable-md navbar-light bg-faded">
+                <ul>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">1<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">2</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">3</a>
+                    </li>
+                </ul>
+            </nav>
         </div>
         <div id="three">
-            <p id="note">Mặt hàng được đăng gần đây</p>
+            <p id="note" style="padding-top: 10px">Mặt hàng được đăng gần đây</p>
+            <div>
+                <p style="font-weight: bolder ; padding-left: 10px "><a href="" style="color: black ">Asus 2017</a></p>
+            </div>
         </div>
     </div>
 </body>

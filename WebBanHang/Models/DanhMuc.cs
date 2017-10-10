@@ -5,6 +5,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Web;
 
+
 namespace WebBanHang.Models
 {
     public class DanhMuc
@@ -29,7 +30,7 @@ namespace WebBanHang.Models
         [Display(Name = "Nhãn hiệu")]
         public string NhanHieu { get; set; }
 
-
+        
 
         [Required(ErrorMessage = "Phải điền ngày đăng vào")]
         [Display(Name = "Ngày đăng")]
