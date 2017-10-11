@@ -4,19 +4,18 @@
     ViewBag.Title = "Giao diện trang chủ";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
-
 <!doctype html>
 <html>
 <head>
     <meta http-equiv="Content-Type" charset="utf-8" content="text/html">
-    <title>Ứng dụng mua bán máy tính xách tay đã qua sử dụng</title>
+    <title>Web bán LAPTOP</title>
     <link rel="stylesheet" href="~/Content/CSS/styleTrangChu.css" type="text/css" />
 </head>
 <body>
     <div id="open">
         <div id="left">
             <p>
-                Ứng dụng mua bán máy tính xách tay đã qua sử dụng
+                Web bán LAPTOP
             </p>
         </div>
 
@@ -36,78 +35,7 @@
                 </ul>
             </div> 
         </div>
-        <div id="two">
-            <div id="line-1">
-                <div id="sp1" class="col-md-4">
-                    <a href="">
-                        <img src="~/Content/Images/sp.png" title="Hình sp">
-                    </a>
-                </div>
-                <div id="sp2" class="col-md-4">
-                    <a href="">
-                        <img src="~/Content/Images/sp.png" title="Hình sp">
-                    </a>
-                </div>
-                <div id="sp3" class="col-md-4">
-                    <a href="">
-                        <img src="~/Content/Images/sp.png" title="Hình sp">
-                    </a>
-                </div>
-            </div>
-            <div id="line-2">
-                <div id="sp1" class="col-md-4">
-                    <a href="">
-                        <img src="~/Content/Images/sp.png" title="Hình sp">
-                    </a>
-                </div>
-                <div id="sp2" class="col-md-4">
-                    <a href="">
-                        <img src="~/Content/Images/sp.png" title="Hình sp">
-                    </a>
-                </div>
-                <div id="sp3" class="col-md-4">
-                    <a href="">
-                        <img src="~/Content/Images/sp.png" title="Hình sp">
-                    </a>
-                </div>
-            </div>
-            <div id="line-3">
-                <div id="sp1" class="col-md-4">
-                    <a href="">
-                        <img src="~/Content/Images/sp.png" title="Hình sp">
-                    </a>
-                </div>
-                <div id="sp2" class="col-md-4">
-                    <a href="">
-                        <img src="~/Content/Images/sp.png" title="Hình sp">
-                    </a>
-                </div>
-                <div id="sp3" class="col-md-4">
-                    <a href="">
-                        <img src="~/Content/Images/sp.png" title="Hình sp">
-                    </a>
-                </div>
-            </div>
-            <nav id="navbar-menu" class="navbar navbar-toggleable-md navbar-light bg-faded">
-                <ul>
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">1<span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">2</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">3</a>
-                    </li>
-                </ul>
-            </nav>
-        </div>
-        <div id="three">
-            <p id="note" style="padding-top: 10px">Mặt hàng được đăng gần đây</p>
-            <div>
-                <p style="font-weight: bolder ; padding-left: 10px "><a href="" style="color: black ">Asus 2017</a></p>
-            </div>
-        </div>
+@Html.Raw(ViewBag.view);
     </div>
 </body>
 </html>

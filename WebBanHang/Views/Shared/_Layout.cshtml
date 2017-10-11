@@ -21,7 +21,15 @@
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
                     <li>@Html.ActionLink("Trang chủ", "Index", "Home")</li>
-                    <li>@Html.ActionLink("Hãng Laptop", "", "Home")</li>                   
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Hãng<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">ASUS</a></li>
+                            <li><a href="#">MAC</a></li>
+                            <li><a href="#">DELL</a></li>
+                            <li><a href="#">ACER</a></li>
+                        </ul>
+                    </li>
                     <li>@Html.ActionLink("Về chúng tôi", "About", "Home")</li>
                     <li>@Html.ActionLink("Liên hệ", "Contact", "Home")</li>
                     <
